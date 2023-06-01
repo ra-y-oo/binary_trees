@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <0-binary_tree_node.c>
+#include "binary_tree.h"
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value) {
     if (parent = NULL) {
