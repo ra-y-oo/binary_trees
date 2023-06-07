@@ -1,12 +1,14 @@
-#include <stdlib.h>
 #include "binary_trees.h"
 
-int binary_tree_is_root(const binary_tree_t* node) {
-    if (node == NULL) {
-        return 0;
-    }
+/**
+ * binary_tree_is_root - detects if tree is root
+ * @node: pointer to node
+ * Return: true or false
+ */
 
-    if (node->parent == NULL) {
-        return 1;
-    }
+int binary_tree_is_root(const binary_tree_t *node)
+{
+	if (!(node) || node->parent)
+		return (0);
+	return (1);
 }
